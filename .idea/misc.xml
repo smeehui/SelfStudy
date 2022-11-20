@@ -6,10 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/Generic/pom.xml" />
         <option value="$PROJECT_DIR$/JavaFileRnW/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaGUI/FirstGUI/ButtonGUI/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaGUI/ButtonGUI/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
