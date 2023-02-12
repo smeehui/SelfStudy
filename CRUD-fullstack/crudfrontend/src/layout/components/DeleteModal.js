@@ -1,27 +1,17 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import React, { Fragment, memo, useState } from "react";
-
-import EditForm from "./EditForm";
+import ViewUser from "../../pages/user/ViewUser";
 import axios from "axios";
 
-function EditModal({ id, handleHide, isShow }) {
-    console.log(id);
+function DeleteModal({ id, handleHide, isShow }) {
     const [show, setShow] = useState(false);
-    const [user, setUser] = useState({
-        name: "",
-        username: "",
-        email: "",
-    });
     const handleClose = () => setShow(false);
-
-    const updateUser = async () => {
-        let rs = await axios.put(`http://localhost:8080/users/${id}`, user);
-        setUser(rs.data);
+    let deleteUser = async () => {
+        await axios.delete(`http://localhost:8080/users/${id}`);
     };
-
     return (
-        <Fragment>
+        <>
             <Modal
                 show={isShow || show}
                 onHide={() => {
@@ -44,7 +34,7 @@ function EditModal({ id, handleHide, isShow }) {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <EditForm setUser={setUser} user={user} id={id}></EditForm>
+                    <ViewUser userId={id} />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button
@@ -56,17 +46,18 @@ function EditModal({ id, handleHide, isShow }) {
                         Close
                     </Button>
                     <Button
+                        variant="danger"
                         onClick={() => {
+                            deleteUser();
                             handleClose();
                             handleHide();
-                            updateUser();
                         }}
                     >
-                        Save changes
+                        Delete
                     </Button>
                 </Modal.Footer>
             </Modal>
-        </Fragment>
+        </>
     );
 }
-export default memo(EditModal);
+export default memo(DeleteModal);

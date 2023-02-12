@@ -3,10 +3,13 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
 import EditModal from "../layout/components/EditModal";
+import { Link } from "react-router-dom";
+import DeleteModal from "../layout/components/DeleteModal";
 
 export default function Home() {
     const [users, setUsers] = useState([]);
-    const [modal, setModal] = useState([0, false]);
+    const [editModal, setEditModal] = useState([0, false]);
+    const [deleteModal, setDeleteModal] = useState([0, false]);
 
     useEffect(() => {
         loadUsers();
@@ -17,19 +20,24 @@ export default function Home() {
         setUsers(get.data);
     };
 
-    const handleEditUser = (user) => {
-        setModal([user.id, true]);
+    const handleEditUser = (id) => {
+        setEditModal([id, true]);
     };
     const handleHideModal = useCallback(() => {
-        setModal([0, false]);
-    }, []);
-
+        setEditModal([0, false]);
+        setDeleteModal([deleteModal[0], false]);
+    }, [deleteModal[0]]);
+    const handleDeleteUser = (id) => {
+        setDeleteModal([id, true]);
+    };
     return (
         <div>
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col" className="text-center">
+                            #
+                        </th>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Username</th>
@@ -41,20 +49,29 @@ export default function Home() {
                 <tbody>
                     {users.map((user, index) => (
                         <tr key={index}>
-                            <td></td>
-                            <td>${user.name}</td>
-                            <td>${user.email}</td>
-                            <td>${user.username}</td>
+                            <td className="text-center">{index}</td>
+                            <td>
+                                <Link to={`/view/${user.id}`}>{user.name}</Link>
+                            </td>
+                            <td>{user.email}</td>
+                            <td>{user.username}</td>
                             <td className="text-center">
                                 <Button
                                     variant="warning mx-1"
                                     onClick={() => {
-                                        handleEditUser(user);
+                                        handleEditUser(user.id);
                                     }}
                                 >
                                     Edit
                                 </Button>
-                                <Button variant="danger">Delete</Button>
+                                <Button
+                                    variant="danger"
+                                    onClick={() => {
+                                        handleDeleteUser(user.id);
+                                    }}
+                                >
+                                    Delete
+                                </Button>
                             </td>
                         </tr>
                     ))}
@@ -62,10 +79,15 @@ export default function Home() {
             </Table>
 
             <EditModal
-                id={modal[0]}
-                isShow={modal[1]}
+                id={editModal[0]}
+                isShow={editModal[1]}
                 handleHide={handleHideModal}
-            ></EditModal>
+            />
+            <DeleteModal
+                id={deleteModal[0]}
+                isShow={deleteModal[1]}
+                handleHide={handleHideModal}
+            />
         </div>
     );
 }

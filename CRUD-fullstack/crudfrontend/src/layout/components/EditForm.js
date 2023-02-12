@@ -2,8 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 
-export default function EditForm({ id }) {
-    const [user, setUser] = useState([]);
+export default function EditForm({ id, user, setUser }) {
     const getUser = async () => {
         const user = await axios
             .get(`http://localhost:8080/users/${id}`)
@@ -13,15 +12,7 @@ export default function EditForm({ id }) {
         setUser(user ? user.data : []);
     };
     const handleChange = (event) => {
-        let name = event.target.name;
-        switch (name) {
-            case "name":
-                let inputName = event.target.value;
-                break;
-
-            default:
-                break;
-        }
+        setUser({ ...user, [event.target.name]: event.target.value });
     };
     useEffect(() => {
         getUser();
@@ -52,7 +43,7 @@ export default function EditForm({ id }) {
                         className="form-control"
                         id="editUsername"
                         value={user.username}
-                        name="email"
+                        name="username"
                     />
                 </div>
             </Row>
@@ -68,7 +59,7 @@ export default function EditForm({ id }) {
                         className="form-control"
                         id="editEmail"
                         value={user.email}
-                        name="phone"
+                        name="email"
                     />
                 </div>
             </Row>
