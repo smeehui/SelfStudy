@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Button, Form, FormLabel, Row } from "react-bootstrap";
 
-export default function AddUserForm() {
+export default function AddUserForm({ setClick, click }) {
     const [user, setUser] = useState({
         name: "",
         email: "",
@@ -14,7 +14,7 @@ export default function AddUserForm() {
     };
 
     const handleAddNewCustomer = async () => {
-        console.log(user);
+        setClick(!click);
         await axios.post("http://localhost:8080/users/create", user);
     };
     return (

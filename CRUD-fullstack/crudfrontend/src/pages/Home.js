@@ -4,16 +4,20 @@ import { useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
 import EditModal from "../layout/components/EditModal";
 import { Link } from "react-router-dom";
+
 import DeleteModal from "../layout/components/DeleteModal";
+import AddUserForm from "./user/AddUserForm";
 
 export default function Home() {
     const [users, setUsers] = useState([]);
     const [editModal, setEditModal] = useState([0, false]);
     const [deleteModal, setDeleteModal] = useState([0, false]);
+    const [click, setClick] = useState(false);
 
     useEffect(() => {
         loadUsers();
-    }, [users]);
+        console.log(123);
+    }, [click]);
 
     let loadUsers = async () => {
         const get = await axios.get("http://localhost:8080/users/");
@@ -32,6 +36,7 @@ export default function Home() {
     };
     return (
         <div>
+            <AddUserForm setClick={setClick} click={click} />
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -87,6 +92,8 @@ export default function Home() {
                 id={deleteModal[0]}
                 isShow={deleteModal[1]}
                 handleHide={handleHideModal}
+                setClick={setClick}
+                click={click}
             />
         </div>
     );

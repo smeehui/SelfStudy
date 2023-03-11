@@ -7,11 +7,11 @@ import { Container } from "react-bootstrap";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        <Container>
-            <App />
-        </Container>
-    </React.StrictMode>,
+    // <React.StrictMode>
+    <Container>
+        <App />
+    </Container>,
+    // </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

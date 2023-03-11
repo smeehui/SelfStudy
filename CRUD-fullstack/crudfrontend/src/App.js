@@ -1,7 +1,6 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./layout/Navbar";
 import Home from "./pages/Home";
-import AddUserForm from "./pages/user/AddUserForm";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ViewUser from "./pages/user/ViewUser";
 function App() {
@@ -14,7 +13,6 @@ function App() {
                         path={"/"}
                         element={
                             <>
-                                <AddUserForm />
                                 <Home />
                             </>
                         }
