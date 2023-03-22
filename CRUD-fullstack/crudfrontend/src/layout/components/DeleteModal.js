@@ -4,9 +4,12 @@ import React, { Fragment, memo, useState } from "react";
 import ViewUser from "../../pages/user/ViewUser";
 import axios from "axios";
 
-function DeleteModal({ id, handleHide, isShow }) {
+function DeleteModal({ id, handleHide, isShow, click, setClick }) {
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
+    const handleClose = () => {
+        setShow(false);
+        setClick(!click);
+    };
     let deleteUser = async () => {
         await axios.delete(`http://localhost:8080/users/${id}`);
     };
