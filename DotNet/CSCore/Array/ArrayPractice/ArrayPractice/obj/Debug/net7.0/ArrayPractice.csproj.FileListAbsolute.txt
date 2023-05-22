@@ -1,0 +1,15 @@
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\bin\Debug\net7.0\ArrayPractice.exe
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\bin\Debug\net7.0\ArrayPractice.deps.json
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\bin\Debug\net7.0\ArrayPractice.runtimeconfig.json
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\bin\Debug\net7.0\ArrayPractice.dll
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\bin\Debug\net7.0\ArrayPractice.pdb
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.csproj.AssemblyReference.cache
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.AssemblyInfoInputs.cache
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.AssemblyInfo.cs
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.csproj.CoreCompileInputs.cache
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.dll
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\refint\ArrayPractice.dll
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.pdb
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ArrayPractice.genruntimeconfig.cache
+D:\SelfStudy\DotNet\CSCore\Array\ArrayPractice\ArrayPractice\obj\Debug\net7.0\ref\ArrayPractice.dll

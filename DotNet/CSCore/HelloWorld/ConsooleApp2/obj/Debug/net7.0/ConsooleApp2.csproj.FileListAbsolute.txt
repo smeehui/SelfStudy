@@ -1,0 +1,15 @@
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.csproj.AssemblyReference.cache
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.GeneratedMSBuildEditorConfig.editorconfig
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.AssemblyInfoInputs.cache
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.AssemblyInfo.cs
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.csproj.CoreCompileInputs.cache
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\bin\Debug\net7.0\ConsooleApp2.exe
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\bin\Debug\net7.0\ConsooleApp2.deps.json
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\bin\Debug\net7.0\ConsooleApp2.runtimeconfig.json
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\bin\Debug\net7.0\ConsooleApp2.dll
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\bin\Debug\net7.0\ConsooleApp2.pdb
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.dll
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\refint\ConsooleApp2.dll
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.pdb
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ConsooleApp2.genruntimeconfig.cache
+D:\SelfStudy\DotNet\CSCore\HelloWorld\ConsooleApp2\obj\Debug\net7.0\ref\ConsooleApp2.dll
