@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProductCRUD_RepoPattern.props" />
+</Project>

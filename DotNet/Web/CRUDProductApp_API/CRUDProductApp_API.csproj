@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Service\CategoryService\" />
+    <Folder Include="Repository\CategoryRepository\" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
 using CRUDProductApp_API.Data;
-using CRUDProductApp_API.Service.ProductService;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +14,7 @@ builder.Services.AddDbContext<AppDBContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("MyDB"));
 });
 builder.Services.AddMvc();
-builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<IProductRepository, ProductRepository>();
 //builder.Services.AddSingleton<ModelMapper<Product,ProductCreReq,ProductRes>>();
 
 var app = builder.Build();

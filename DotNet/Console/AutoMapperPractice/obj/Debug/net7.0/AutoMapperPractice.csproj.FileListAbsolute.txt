@@ -1,0 +1,17 @@
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.csproj.AssemblyReference.cache
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.AssemblyInfoInputs.cache
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.AssemblyInfo.cs
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.csproj.CoreCompileInputs.cache
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapperPractice.exe
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapperPractice.deps.json
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapperPractice.runtimeconfig.json
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapperPractice.dll
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapperPractice.pdb
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\bin\Debug\net7.0\AutoMapper.dll
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.csproj.CopyComplete
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.dll
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\refint\AutoMapperPractice.dll
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.pdb
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\AutoMapperPractice.genruntimeconfig.cache
+D:\SelfStudy\DotNet\Console\AutoMapperPractice\obj\Debug\net7.0\ref\AutoMapperPractice.dll
